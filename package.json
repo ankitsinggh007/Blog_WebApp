@@ -1,0 +1,17 @@
+{
+  "name": "blog_app",
+  "version": "1.0.0",
+  "description": "A full-stack blog application",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && node index.js",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"  
+  }
+}
